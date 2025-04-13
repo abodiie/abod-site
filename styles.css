@@ -203,3 +203,59 @@ body, html {
   object-fit: cover;
   z-index: 0;
 }
+
+
+.drone-badge {
+  position: fixed;
+  top: 40px;
+  left: 10px;
+  transform: rotate(-10deg);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+  z-index: 1001;
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+
+.drone-badge {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  transform: rotate(0deg);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.drone-badge {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  text-align: center;
+  z-index: 1001;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.drone-badge img {
+  filter: brightness(1000%) contrast(100%);
+}
