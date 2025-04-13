@@ -56,23 +56,19 @@ body {
 }
 
 
-
 .social-icons {
-  margin-top: 20px;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
+
 .social-icons img {
   width: 40px;
   height: 40px;
-  filter: brightness(1000%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
 }
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
 
 .social-icons img:hover {
   transform: scale(1.1);
