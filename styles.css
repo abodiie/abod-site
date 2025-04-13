@@ -141,3 +141,18 @@ body, html {
   z-index: 1000;
   transition: transform 0.3s ease;
 }
+
+
+.whatsapp-float {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+.whatsapp-float img {
+  width: 45px;
+  height: 45px;
+  opacity: 0.95;
+}
