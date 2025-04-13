@@ -119,3 +119,25 @@ body, html {
     padding: 0 1rem;
   }
 }
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
