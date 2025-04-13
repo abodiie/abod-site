@@ -156,3 +156,22 @@ body, html {
   height: 45px;
   opacity: 0.95;
 }
+
+
+.whatsapp-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #25D366;
+  padding: 10px 14px;
+  border-radius: 50px;
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-icon {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+}
