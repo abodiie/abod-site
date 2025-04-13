@@ -1,18 +1,9 @@
 
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
   font-family: 'Tajawal', sans-serif;
-  scroll-behavior: smooth;
-  background-color: #111;
-  color: white;
+  background-color: #000;
 }
-
 
 .hero {
   background-image: url('background.jpg');
@@ -21,46 +12,12 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1rem;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(4px);
-}
-
-.content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-.hero-name {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  line-height: 2;
-  margin-bottom: 1.8rem;
-  color: #ddd;
-}
-
-.socials a {
-  color: #f0f0f0;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
+  color: white;
 }
 
 .gallery {
@@ -77,209 +34,23 @@ body, html {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.video-thumb img {
-  width: 100%;
-  border-radius: 12px;
-  border: 2px solid #333;
+.video-title {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .footer {
   background-color: #000;
-  color: #bbb;
-  text-align: center;
+  color: white;
   padding: 2rem 1rem;
-  font-size: 0.95rem;
-}
-
-.footer a {
-  color: #bbb;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.footer a:hover {
-  color: white;
-}
-
-.footer-socials {
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .hero-name {
-    font-size: 2.2rem;
-  }
-
-  .tagline {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-}
-
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  left: 25px;
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-
-.whatsapp-float {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-
-.whatsapp-float {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 9999;
-  background-color: transparent;
-}
-
-.whatsapp-float img {
-  width: 45px;
-  height: 45px;
-  opacity: 0.95;
-}
-
-
-.whatsapp-fixed {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #25D366;
-  padding: 10px 14px;
-  border-radius: 50px;
-  z-index: 9999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp-icon {
-  font-size: 1.6rem;
-  color: white;
-  font-weight: bold;
-}
-
-
-@media (max-width: 768px) {
-  
-.hero {
-  background-image: url('background.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 1rem;
-}
-
-
-  .hero-name {
-    font-size: 2rem;
-  }
-
-  .tagline {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-}
-
-
-.bg-video {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-
-.drone-badge {
-  position: fixed;
-  top: 40px;
-  left: 10px;
-  transform: rotate(-10deg);
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
   font-size: 0.9rem;
-  padding: 8px 12px;
-  border-radius: 10px;
-  z-index: 1001;
-  backdrop-filter: blur(5px);
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-
-
-.drone-badge {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  transform: rotate(0deg);
-  color: white;
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-align: center;
-  z-index: 1001;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-
-
-
-
-.gallery {
-  padding: 4rem 1rem;
-  background-color: #111;
-  text-align: center;
-}
-
-.gallery h2 {
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.video-thumb img {
-  width: 100%;
-  border-radius: 12px;
-  border: 2px solid #333;
 }
