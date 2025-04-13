@@ -54,3 +54,23 @@ body {
   text-align: center;
   font-size: 0.9rem;
 }
+
+
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.4));
+}
