@@ -7,7 +7,10 @@
 
 body, html {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #111;
+  color: white;
 }
 
 .hero {
@@ -21,38 +24,41 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
 }
 
 .content {
   position: relative;
-  text-align: center;
-  z-index: 1;
+  z-index: 2;
+  max-width: 800px;
 }
 
-.logo {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .tagline {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  line-height: 2;
+  margin-bottom: 1.8rem;
+  color: #ddd;
 }
 
 .socials a {
-  color: white;
+  color: #f0f0f0;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
 }
 
 .gallery {
@@ -81,9 +87,8 @@ body, html {
   border: 2px solid #333;
 }
 
-
 .footer {
-  background-color: #0a0a0a;
+  background-color: #000;
   color: #bbb;
   text-align: center;
   padding: 2rem 1rem;
@@ -104,31 +109,13 @@ body, html {
   margin-top: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  .hero-name {
+    font-size: 2.2rem;
+  }
 
-.about {
-  background-color: #000;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.about-name {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.about-text {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  line-height: 2;
-  color: #ccc;
-}
-
-
-.hero-name {
-  font-size: 3.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  .tagline {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
