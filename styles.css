@@ -13,6 +13,7 @@ body, html {
   color: white;
 }
 
+
 .hero {
   background-image: url('background.jpg');
   background-attachment: fixed;
@@ -27,6 +28,7 @@ body, html {
   text-align: center;
   padding: 1rem;
 }
+
 
 .overlay {
   position: absolute;
@@ -178,11 +180,22 @@ body, html {
 
 
 @media (max-width: 768px) {
-  .hero {
-    background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
-  }
+  
+.hero {
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
 
   .hero-name {
     font-size: 2rem;
